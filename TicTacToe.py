@@ -2,7 +2,7 @@ import os
 import time
 
 board = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
-player = 1
+player = 1 
 
 # Win Flags
 Win = 1
@@ -15,12 +15,13 @@ Mark = 'X'
 
 
 def DrawBoard():
-    print(" %c | %c | %c " % (board[1], board[2], board[3]))
-    print("___|___|___")
-    print(" %c | %c | %c " % (board[4], board[5], board[6]))
-    print("___|___|___")
-    print(" %c | %c | %c " % (board[7], board[8], board[9]))
-    print("   |   |")
+    print(" ___________")
+    print("| %c | %c | %c |" % (board[1], board[2], board[3]))
+    print("|___|___|___|")
+    print("| %c | %c | %c |" % (board[4], board[5], board[6]))
+    print("|___|___|___|")
+    print("| %c | %c | %c |" % (board[7], board[8], board[9]))
+    print("|___|___|___|")
 
 
 def CheckPosition(x):
@@ -59,14 +60,15 @@ def CheckWin():
 print()
 print("GENERAL INSTRUCTIONS:->")
 print("Player 1 is [X] \nPlayer 2 is [O] \nThe Positions mentioned below:")
-print(" 1 | 2 | 3 ")
-print("___|___|___")
-print(" 4 | 5 | 6 ")
-print("___|___|___")
-print(" 7 | 8 | 9 ")
-print("   |   |   ")
+print(" ___________")
+print("| 1 | 2 | 3 |")
+print("|___|___|___|")
+print("| 4 | 5 | 6 |")
+print("|___|___|___|")
+print("| 7 | 8 | 9 |")
+print("|___|___|___|")
 print("Game Loading.....")
-time.sleep(7)
+time.sleep(5)
 
 while Game == Running:
     os.system('cls')
